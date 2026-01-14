@@ -89,6 +89,11 @@ Your web application has:
 
 - **Port already in use**: Change the PORT variable in `app.js`
 - **Module not found**: Make sure you ran `npm install`
+- **Unable to install dependencies**: Temporarily disable execution policy checks for the current PowerShell window by running the following command:  
+ ```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+   
 - **Page not loading**: Check that your server is running and visit the correct URL
 - **API not working**: Check browser console for JavaScript errors
 
